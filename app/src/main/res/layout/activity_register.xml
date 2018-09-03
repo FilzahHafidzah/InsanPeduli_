@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context="com.filzah.insanpeduli.Activity_Register">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="16dp">
+        <ImageView
+            android:id="@+id/icregprof"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_pro"
+            android:layout_marginTop="40dp"/>
+
+        <ImageView
+            android:id="@+id/icregmail"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_hom"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/icregprof"/>
+
+        <ImageView
+            android:id="@+id/icregphone"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_hom"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/icregmail"/>
+
+        <ImageView
+            android:id="@+id/icregpass"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_hom"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/icregphone"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="5">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+            app:met_baseColor="#254fa9"
+            app:met_primaryColor="#ba46c9"
+            app:met_errorColor="#ff0000"
+            app:met_floatingLabel="highlight"
+            android:layout_marginTop="20dp"
+            android:id="@+id/regnama"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat Email"
+            app:met_baseColor="#254fa9"
+            app:met_primaryColor="#ba46c9"
+            app:met_errorColor="#ff0000"
+            android:layout_below="@id/regnama"
+            android:inputType="textEmailAddress"
+            app:met_floatingLabel="highlight"
+            android:id="@+id/regemail"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nomor Hp"
+            app:met_baseColor="#254fa9"
+            app:met_primaryColor="#ba46c9"
+            app:met_errorColor="#ff0000"
+            android:inputType="number"
+            android:gravity="top|left"
+            app:met_floatingLabel="highlight"
+            android:layout_below="@id/regemail"
+            android:layout_marginTop="10dp"
+            android:id="@+id/regphone"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:met_baseColor="#254fa9"
+            app:met_primaryColor="#ba46c9"
+            app:met_errorColor="#ff0000"
+            android:inputType="textPassword"
+            app:met_floatingLabel="highlight"
+            android:layout_below="@id/regphone"
+            android:layout_marginTop="10dp"
+            android:id="@+id/regpass"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Konfirmasi Password"
+            app:met_baseColor="#254fa9"
+            app:met_primaryColor="#ba46c9"
+            app:met_errorColor="#ff0000"
+            android:inputType="textPassword"
+            app:met_floatingLabel="highlight"
+            android:layout_below="@id/regpass"
+            android:layout_marginTop="10dp"
+            android:id="@+id/regpass2"/>
+
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:id="@+id/btnregister"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/regpass2"
+            android:background="@color/colorLight"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginRight="30dp"/>
+
+        <TextView
+            android:id="@+id/txtlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah Punya Akun? "
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:id="@+id/imglogin"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_hom"
+            android:layout_toRightOf="@id/txtlogin"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

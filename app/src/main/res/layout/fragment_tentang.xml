@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.filzah.insanpeduli.navHome">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="SOLIDARITAS INSAN PEDULI
+
+Solidaritas Insan Peduli adalah lembaga sosial bersifat nirlaba menerima infaq dan shadaqah serta zakat. Kami memberikan bantuan yang bersifat insidentil (darurat) kepada para penerima bantuan yang tidak mampu dan sangat membutuhkan."
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="casual"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/icooon"
+        android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tentang Kami"
+            android:id="@+id/tntentang"
+            android:background="@color/colorLight"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

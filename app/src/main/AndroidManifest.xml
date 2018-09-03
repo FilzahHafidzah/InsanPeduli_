@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.filzah.insanpeduli">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icooon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icooon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity_Main"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Activity_SplashScreen"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity_Register" />
+        <activity
+            android:name=".Home_Program"
+            android:label="Program" />
+        <activity
+            android:name=".Home_Kegiatan"
+            android:label="Kegiatan SIP" />
+        <activity
+            android:name=".Home_Help"
+            android:label="Bantuan SIP" />
+        <activity
+            android:name=".Home_Kutipan"
+            android:label="Kutipan SIP" />
+        <activity
+            android:name=".Home_Verifikator"
+            android:label="Verifikator SIP" />
+        <activity
+            android:name=".Home_Donasi"
+            android:label="Donasi SIP" />
+        <activity
+            android:name=".Home_Donasikan"
+            android:label="Donasikan" />
+        <activity
+            android:name=".Home_Map"
+            android:label="Peta Verifikator" />
+        <activity
+            android:name=".Home_Chat"
+            android:label="Chat SIP" />
+        <activity android:name=".Activity_Login"></activity>
+    </application>
+
+</manifest>

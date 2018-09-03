@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.filzah.insanpeduli.Activity_Login">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <ImageView
+            android:id="@+id/logo"
+            android:src="@drawable/icontran"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_img"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_gravity="center"
+            app:met_baseColor="#254fa9"
+            android:layout_marginRight="10dp"
+            app:met_primaryColor="#ba46c9"
+            app:met_errorColor="#ff0000"
+            android:inputType="textEmailAddress"
+            app:met_floatingLabel="highlight"
+            android:id="@+id/logemail"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_img"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:met_baseColor="#254fa9"
+            app:met_primaryColor="#ba46c9"
+            app:met_errorColor="#ff0000"
+            android:layout_marginRight="10dp"
+            android:inputType="textPassword"
+            app:met_floatingLabel="highlight"
+            android:id="@+id/logpass"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorLight"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/btnlogin"
+            android:layout_marginRight="45dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/txtregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum Punya Akun ?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+            android:id="@+id/imgsignup"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:src="@drawable/title_programkesehatan"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/txtregister"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
